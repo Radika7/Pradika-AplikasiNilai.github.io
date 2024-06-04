@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <title>Aplikasi Nilai</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style=" background-color: white;">
+    <div class="container">
+        <h1>Aplikasi Nilai</h1>
+        <div class="input-section">
+            <div class="input-group">
+                <label for="nim">Nim</label>
+                <input type="text" id="nim">
+                <label for="nama">Nama</label>
+                <input type="text" id="nama">
+            </div>
+            <div class="input-group">
+                <fieldset>
+                    <legend>Nilai Teori</legend>
+                    <label for="presensiTeori">Presensi</label>
+                    <input type="text" id="presensiTeori">
+                    <label for="tugasTeori">Tugas</label>
+                    <input type="text" id="tugasTeori">
+                    <label for="utsTeori">UTS</label>
+                    <input type="text" id="utsTeori">
+                    <label for="uasTeori">UAS</label>
+                    <input type="text" id="uasTeori">
+                </fieldset>
+            </div>
+            <div class="input-group">
+                <fieldset>
+                    <legend>Nilai Praktek</legend>
+                    <label for="presensiPraktek">Presensi</label>
+                    <input type="text" id="presensiPraktek">
+                    <label for="tugasPraktek">Tugas</label>
+                    <input type="text" id="tugasPraktek">
+                    <label for="utsPraktek">UTS</label>
+                    <input type="text" id="utsPraktek">
+                    <label for="uasPraktek">UAS</label>
+                    <input type="text" id="uasPraktek">
+                </fieldset>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="saveButton">Simpan</button>
+            <button id="resetButton">Reset</button>
+        </div>
+        <div class="table-section">
+            <table>
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>NIM</th>
+                        <th>Nama</th>
+                        <th>Presensi Teori</th>
+                        <th>Tugas Teori</th>
+                        <th>UTS Teori</th>
+                        <th>UAS Teori</th>
+                        <th>Presensi Praktek</th>
+                        <th>Tugas Praktek</th>
+                        <th>UTS Praktek</th>
+                        <th>UAS Praktek</th>
+                        <th>Nilai Akhir</th>
+                        <th>Grade</th>
+                    </tr>
+                </thead>
+                <tbody id="gradeTableBody">
+                </tbody>
+                <tbody>
+                    <tr>
+                        <th scope="row"> </th>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                    </tr>
+                    <tr>
+                        <th scope="row"> </th>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                    <tr>
+                        <th scope="row"> </th>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                    <tr>
+                        <th scope="row"> </th>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                </tbody>
+            </table>
+        </div>
+        <button id="button" class="btn"> Reset </button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
